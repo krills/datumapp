@@ -1,0 +1,38 @@
+:root {
+    --border-default: 1px solid var(--bs-gray-500);
+    --green-light: #b0e1b0;
+}
+.day {
+    height: 60px;
+    border-left: var(--border-default);
+    border-top: var(--border-default);
+}
+.day:last-child {
+    border-right: var(--border-default);
+}
+.day:hover {
+    background-color: var(--green-light);
+    background-image: var(--bs-gradient);
+    box-shadow: inset 2px 2px 3px rgba(255,255,255,0.15), inset -2px -2px 3px rgba(255,255,255,0.15);
+}
+.day.dayDisabled:hover {
+    background-color: var(--bs-gray-300);
+}
+.dayDisabled {
+    cursor: not-allowed;
+    background: var(--bs-gray-200);
+    color: var(--bs-gray-500);
+}
+.dayToday {
+    background: #b4b4ee;
+}
+.dayLastRow {
+    border-bottom: var(--border-default);
+}
+.daySelectable {
+    cursor: pointer;
+}
+.daySelected {
+    background: var(--bs-green);
+    color: #fff;
+}

@@ -22,5 +22,11 @@
   },
   "include": [
     "src"
+  ],
+  "references": [
+    {
+      "path": "./../SharedType",
+      "prepend": true,
+    }
   ]
 }
